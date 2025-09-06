@@ -2,10 +2,10 @@
 // e.g.,  POST /api/compose Do the whole process in one shot       
 
 import express from "express"
-import createImage from "../controller/composeController.js"
+import { composeImage } from "../controller/composeController.js"
 
 const router = express.Router();
 
-router.post("/", createImage);
+router.post("/", composeImage);
 
 export default router;
