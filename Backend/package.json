@@ -12,6 +12,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "install": "^0.13.0",
+    "multer": "^2.0.2",
+    "npm": "^11.6.0",
+    "onnxruntime-node": "^1.22.0-rev",
+    "sharp": "^0.34.3"
   }
 }

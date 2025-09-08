@@ -1,11 +1,11 @@
-// Need a few routes here for processing the video
-// e.g.,  POST /api/compose Do the whole process in one shot       
-
 import express from "express"
+import multer from "multer"
 import { composeImage } from "../controller/composeController.js"
+
+const upload = multer({ limits: { fileSize: 10 * 1024 * 1024 } });
 
 const router = express.Router();
 
-router.post("/", composeImage);
+router.post("/", upload.single("image"), composeImage);
 
 export default router;
