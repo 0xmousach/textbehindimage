@@ -1,7 +1,12 @@
 import { useState } from "react"
+import LogoutButton from "../Components/logoutButton"
+import AppLabel from "../Components/appLabel"
 
 export function Upload() {
     return (
-        <div>Upload Page</div>
+        <div>
+            <AppLabel /> 
+            <LogoutButton /> 
+        </div>
     )
 }
